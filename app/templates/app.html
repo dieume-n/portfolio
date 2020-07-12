@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Luteranya Nyange</title>
+</head>
+
+<body class="antialiased bg-gray-200">
+    <header class="lg:px-16 px-6 lg:py-4 py-2 bg-white">
+        <nav class="flex items-center flex-wrap ">
+            <div class="flex flex-1 justify-between items-center">
+                <a href="/">
+                    <img src="{{ url_for('static', filename='img/logo.svg')}}" alt="Logo" class="w-12 h-12 px-0 py-0">
+                </a>
+            </div>
+            <div class="block lg:hidden md:hidden">
+                <button class="flex items-center px-3 py-2 text-gray-900">
+                    <svg class="fill-current  h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden lg:flex md:flex md:items-center justify-between">
+                <a href="#about-me" class="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-2">
+                    About
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-2">
+                    Projects
+                </a>
+                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-2">
+                    Contact
+                </a>
+                <a href="#"
+                    class="block mt-4 lg:inline-block lg:mt-0 border-2 rounded px-3 py-2 hover:bg-white border-indigo-500">Resume</a>
+            </div>
+
+        </nav>
+    </header>
+    <div class="container mx-auto">
+        <section class="mr-10 ml-10 md:mr-20 md:ml-20 lg:mr-150 lg:ml-150 lg:pt-150 lg:pb-150">
+            <h1 class="text-4xl my-8">Hello! 👋</h1>
+            <div class="my-10 flex md:w-2/3 lg:w-1/2 sm:w-full">
+                <p class="text-xl lg:leading-12 md:text-2xl lg:text-4xl">I'm <span class="font-bold">Luteranya
+                        Nyange</span>, a
+                    fullstack web developer focused on building coll things for the web.
+                </p>
+            </div>
+            <div class="">
+                Get in touch 👉
+                <span class="md:inline-block">
+                    <a href="mailto:luteranya.dieumerci@gmail.com" target="_blank"
+                        class="underline mx-2">luteranya.dieumerci@gmail.com</a>
+
+                    <a href="#" target="_blank" class="underline mx-2">LinkedIn</a>
+
+                    <a href="https://www.github.com/dieume-n" target="_blank" class="underline mx-2">GitHub</a>
+
+                </span>
+            </div>
+        </section>
+
+        <!-- <section class="pt-150 pb-150 px-10">
+            <div class="md:px-10 lg:px-20">
+                <div id="about-me">
+                    <h3 class="text-xl mb-10">About Me</h3>
+                    <div class="flex flex-wrap">
+                        <div class="md:w-1/2 sm:w-full ">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, exercitationem ipsa itaque,
+                                placeat deleniti ipsum tenetur facere cumque neque error asperiores qui incidunt ad
+                                ullam et culpa autem veniam animi?
+                            </p>
+                            <p class="my-3">Here are a few technologies I've been working with recently:</p>
+                            <div class="flex xs:text-sm md:text-base">
+                                <div class="w-1/3 ">
+                                    <p class="uppercase mb-3">Languages</p>
+                                    <ul>
+                                        <li>PHP</li>
+                                        <p>Python</p>
+                                        <p>JavaScript</p>
+                                    </ul>
+                                </div>
+                                <div class="w-1/3">
+                                    <p class="uppercase mb-3">Framewors</p>
+                                    <ul>
+                                        <li>Laravel</li>
+                                        <li>Flask</li>
+                                        <li>VueJs</li>
+                                        <li>Django</li>
+
+                                    </ul>
+                                </div>
+                                <div class="w-1/3">
+                                    <p class="uppercase mb-3">Tools</p>
+                                    <ul>
+                                        <li>Git & GitHub</li>
+                                        <li>Insomnia & Postman</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 sm:w-full align-item-center">
+                            <img src="{{ url_for('static', filename='img/111.jpg')}}" alt="Me"
+                                class="image rounded border-solid border-4 sm:mt-5 md:mt-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luteranya Nyange</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind.css') }}">
+</head>
+
+<body class="subpixel-antialiased bg-gray-200">
+    <div class="px-10 lg:px-32" id="content-wrapper">
+        <section id="intro" class="py-10">
+            <h1 class="mt-20 md:mt-24 text-4xl md:text-5xl text-gray-900">Hello <span>👋 </span></h1>
+            <div class="flex flex-col w-2/3">
+                <p class="mt-20 md:mt-36 text-2xl md:text-3xl text-gray-900">I'm <span class="font-bold">Luteranya
+                        Nyange</span></p>
+                <p class="text-2xl text-gray-900 md:text-3xl">A fullstack web developer who'se focus is building cool
+                    things
+                    for the web
+                </p>
+            </div>
+
+            <p class="mt-20 md:mt-36 text-2xl text-gray-900 ">Get in touch 👇
+            <ul class="md:flex md:flex-row">
+                <li class="mx-2 md:mx-5">
+                    <a href="mailto:luteranya.dieumerci@gmail.com" target="_blank"
+                        class="text-xl text-gray-900 hover:font-semibold border-b-2 border-blue-700">
+                        luteranya.dieumerci@gmail.com
+                    </a>
+                </li>
+                <li class="mx-2 md:mx-5">
+                    <a href="#" target="_blank"
+                        class="text-xl text-gray-900 hover:font-semibold border-b-2 border-blue-700">
+                        LinkedIn
+                    </a>
+                </li>
+                <li class="mx-2 md:mx-5">
+                    <a href="https://www.github.com/dieume-n" target="_blank"
+                        class="text-xl  text-gray-900 hover:font-semibold border-b-2 border-blue-700">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+            </p>
+        </section>
+        <section id="about" class="py-10 lg:px-32">
+            <div class="flex flex-wrap flex-col lg:flex-row mt-36">
+                <h1 class=" text-2xl font-bold uppercase text-blue-600 lg:w-1/4 justify-end">About Me</h1>
+                <div class="px-5 md:px-10 lg:px-0 lg:w-3/4">
+                    <p class="text-xl md:text-2xl">
+                        I'm currently pursuing a Bachelor's degree in Informatics and Computer Science at <a
+                            href="https://www.strathmore.edu" target="_blank"
+                            class="hover:underline font-bold">Strathmore
+                            University.</a>
+                    </p>
+                    <p class="text-xl md:text-2xl">I'm very passionate about programming, and bringing ideas from
+                        abstract
+                        concept to
+                        concrete software.</p>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="skills" class="py-10 lg:px-32">
+            <div class="flex flex-wrap flex-col lg:flex-row mt-36">
+                <h1 class="font-bold uppercase text-2xl text-blue-600 w-full lg:w-1/4">Skills</h1>
+                <div class="flex flex-wrap flex-row w-full justify-between mx-5 lg:mx-0 lg:w-3/4">
+                    <div class="my-4 lg:my-0">
+                        <p class="text-xl font-bold uppercase ">Languages</p>
+                        <ul class="text-xl mx-4">
+                            <li>PHP</li>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="my-4 lg:my-0">
+                        <p class="text-xl font-bold uppercase ">Frameworks</p>
+                        <ul class="text-xl mx-4">
+                            <li>Laravel</li>
+                            <li>Flask</li>
+                            <li>Django</li>
+                            <li>VueJs</li>
+                        </ul>
+                    </div>
+                    <div class="my-4 lg:my-0">
+                        <p class="text-xl font-bold uppercase ">Tools</p>
+                        <ul class="text-xl mx-4">
+                            <li>Git & GitHub</li>
+                            <li>Heroku</li>
+                            <li>Insomnia & Postman</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="py-10 lg:px-20">
+            <div class="mt-36 flex flex-wrap flex-col lg:flex-row">
+                <h1 class="text-2xl font-bold uppercase text-blue-600 lg:w-1/4">Personal Projects</h1>
+                <div class="flex flex-col lg:w-3/4">
+                    <div class="flex flex-wrap flex-col lg:flex-row w-full mt-4 px-5 md:px-10 lg:mt-0 lg:px-0">
+                        <div class="w-full lg:w-3/5">
+                            <a href="https://dieume-n.github.io/budgett/" target="_blank">
+                                <img src="{{ url_for('static', filename='img/projects/budgett.png')}}" alt="Budgett app"
+                                    class="rounded">
+                            </a>
+                        </div>
+
+                        <div class="w-full lg:w-2/5 mt-5 lg:mt-0 px-5">
+                            <h3 class="text-2xl font-bold">Bugett</h3>
+                            <p class="text-base mt-2">Budgett is a simple budgetting web application allowing you
+                                to
+                                records all your incomes and expenses on a monthly basis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-wrap flex-col lg:flex-row mt-5 px-5 md:px-10 lg:px-0">
+                        <div class="w-full lg:w-3/5">
+                            <a href="https://dieume-n.github.io/budgett/" target="_blank">
+                                <img src="{{ url_for('static', filename='img/projects/pig_game.png')}}"
+                                    alt="Budgett app" class="rounded">
+                            </a>
+                        </div>
+                        <div class="w-full lg:w-2/5 mt-5 lg:mt-0 px-5">
+                            <h3 class="text-xl font-bold mb-2">Pig Game</h3>
+                            <p class="text-base md:text-xl">Budgett is a simple budgetting web application allowing you
+                                to
+                                records all your incomes and expenses on a monthly basis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -5,23 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luteranya Nyange</title>
+    <!-- <link href="//db.onlinewebfonts.com/c/0a086e32e41c5e5960b26626757f07f3?family=Apercu" rel="stylesheet"
+        type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 
 <body class="subpixel-antialiased bg-gray-200">
     <div class="px-10 lg:px-32" id="content-wrapper">
         <section id="intro" class="py-10">
-            <h1 class="mt-20 md:mt-24 text-4xl md:text-5xl text-gray-900">Hello <span>👋 </span></h1>
+            <h1 class="mt-20 md:mt-24 text-4xl  text-gray-900">Hello <span>👋 </span></h1>
             <div class="flex flex-col w-2/3">
-                <p class="mt-20 md:mt-36 text-2xl md:text-3xl text-gray-900">I'm <span class="font-bold">Luteranya
+                <p class="mt-20 md:mt-32 text-2xl md:text-3xl text-gray-900 animate__animated animate__fadeInUp">I'm
+                    <span class="font-bold">Luteranya
                         Nyange</span></p>
-                <p class="text-2xl text-gray-900 md:text-3xl">A fullstack web developer who'se focus is building cool
+                <p class="text-2xl text-gray-900 md:text-3xl animate__animated animate__fadeInUp">A fullstack web
+                    developer who'se focus is building cool
                     things
                     for the web
                 </p>
             </div>
 
-            <p class="mt-20 md:mt-36 text-2xl text-gray-900 ">Get in touch 👇
+            <p class="mt-20 md:mt-32 text-2xl text-gray-900 ">Get in touch 👇
             <ul class="md:flex md:flex-row">
                 <li class="mx-2 md:mx-5">
                     <a href="mailto:luteranya.dieumerci@gmail.com" target="_blank"
@@ -47,19 +54,23 @@
         <section id="about" class="py-10 lg:px-32">
             <div class="flex flex-wrap flex-col lg:flex-row mt-36">
                 <h1 class=" text-2xl font-bold uppercase text-blue-600 lg:w-1/4 justify-end">About Me</h1>
-                <div class="px-5 md:px-10 lg:px-0 lg:w-3/4">
-                    <p class="text-xl md:text-2xl">
-                        I'm currently pursuing a Bachelor's degree in Informatics and Computer Science at <a
-                            href="https://www.strathmore.edu" target="_blank"
-                            class="hover:underline font-bold">Strathmore
-                            University.</a>
-                    </p>
-                    <p class="text-xl md:text-2xl">I'm very passionate about programming, and bringing ideas from
-                        abstract
-                        concept to
-                        concrete software.</p>
+                <div class="flex flex-wrap flex-row w-full justify-between mx-5 lg:mx-0 lg:w-3/4">
+                    <div class="w-full lg:w-2/3 px-5 md:px-10 lg:px-0 ">
+                        <p class="text-xl md:text-2xl animate__animated animate__fadeIn">
+                            I'm currently pursuing a Bachelor's degree in Informatics and Computer Science at <a
+                                href="https://www.strathmore.edu" target="_blank"
+                                class="hover:underline font-bold">Strathmore
+                                University.</a>
+                        </p>
+                        <p class="text-xl md:text-2xl animate__animated animate__fadeIn">I'm very passionate about
+                            programming, and bringing ideas from abstract concept to concrete software.</p>
 
+                    </div>
+                    <div class="w-2/3 md:w-full lg:w-1/3 mt-5 lg:mt-0 px-5 lg:px-0">
+                        <img src="{{ url_for('static', filename='img/111.jpg')}}" alt="My Picture" class="rounded">
+                    </div>
                 </div>
+
             </div>
 
         </section>
@@ -104,6 +115,37 @@
                 <div class="flex flex-col lg:w-3/4">
                     <div class="flex flex-wrap flex-col lg:flex-row w-full mt-4 px-5 md:px-10 lg:mt-0 lg:px-0">
                         <div class="w-full lg:w-3/5">
+                            <a href="https://github.com/dieume-n/vidate" target="_blank">
+                                <img src="{{ url_for('static', filename='img/projects/vidate.png')}}" alt="Vidate"
+                                    class="rounded">
+                            </a>
+                        </div>
+
+                        <div class="w-full lg:w-2/5 mt-5 lg:mt-0 px-5">
+                            <h3 class="text-2xl font-bold">Vidate</h3>
+                            <p class="text-base mt-2">Vidate is video sharing platform just like youtube where users can
+                                create channels and upload videos for anyone to see. it is powered by Cloudinary for
+                                video storage and algolia search.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap flex-col lg:flex-row w-full mt-4 px-5 md:px-10 lg:px-0">
+                        <div class="w-full lg:w-3/5">
+                            <a href="https://github.com/dieume-n/questly" target="_blank">
+                                <img src="{{ url_for('static', filename='img/projects/questly.png')}}"
+                                    alt="Questly screenshot" class="rounded">
+                            </a>
+                        </div>
+
+                        <div class="w-full lg:w-2/5 mt-5 lg:mt-0 px-5">
+                            <h3 class="text-2xl font-bold">Questly</h3>
+                            <p class="text-base mt-2">Questly is a single page Q & A application made with laravel and
+                                vueJs, inspired by Stackoverflow
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="flex flex-wrap flex-col lg:flex-row w-full mt-4 px-5 md:px-10 lg:px-0">
+                        <div class="w-full lg:w-3/5">
                             <a href="https://dieume-n.github.io/budgett/" target="_blank">
                                 <img src="{{ url_for('static', filename='img/projects/budgett.png')}}" alt="Budgett app"
                                     class="rounded">
@@ -127,12 +169,12 @@
                         </div>
                         <div class="w-full lg:w-2/5 mt-5 lg:mt-0 px-5">
                             <h3 class="text-xl font-bold mb-2">Pig Game</h3>
-                            <p class="text-base md:text-xl">Budgett is a simple budgetting web application allowing you
-                                to
-                                records all your incomes and expenses on a monthly basis.
+                            <p class="text-base md:text-xl">A two player game, playing in rounds. In each turn, a player
+                                roll a dice as many times as he wishes. Each result get added to his ROUND
+                                score. The first player to reach 100 points on GLOBAL score wins the game.
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
